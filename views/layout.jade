@@ -1,0 +1,23 @@
+doctype html
+html
+  head
+      meta(charset="utf-8")
+      meta(http-equiv="X-UA-Compatible" content="IE=edge, chrome=1")
+      meta(name="description" content="")
+      meta(name="viewport" content="width=device-width, initial-scale=1")
+
+      title= title
+
+      link(rel='stylesheet', href='/bower_modules/bootstrap/dist/css/bootstrap.css')
+      link(rel='stylesheet', href='/build/css/main.min.css?' + new Date().getTime())
+      script(type='text/javascript', src='/bower_modules/jquery/jquery.min.js')
+      script(type='text/javascript', src='/bower_modules/bootstrap/dist/js/bootstrap.min.js')
+
+      block styles
+
+      block scripts
+
+  body
+      block content
+
+  script(type='text/javascript', src='/build/js/all.min.js?' + new Date().getTime())
